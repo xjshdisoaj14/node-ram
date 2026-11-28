@@ -8,11 +8,27 @@
   "license": "MIT",
   "private": false,
   "scripts": {
+    "build": "node build.mjs",
     "dev": "node index.js",
     "start": "node index.js"
   },
   "dependencies": {
-    "axios": "latest"
+    "@prisma/composer": "0.40.0",
+    "@prisma/composer-prisma-cloud": "0.40.0",
+    "@prisma/orm-postgres": "8.0.0-rc.25",
+    "axios": "latest",
+    "effect": "4.1.4",
+    "pg": "^8.22.0"
+  },
+  "devDependencies": {
+    "@types/pg": "^8.20.0",
+    "prisma": "8.0.0-rc.35"
+  },
+  "overrides": {
+    "effect": "4.1.4",
+    "@effect/platform-bun": "4.1.4",
+    "@effect/platform-node": "4.1.4",
+    "@effect/platform-node-shared": "4.1.4"
   },
   "engines": {
     "node": ">=14"
